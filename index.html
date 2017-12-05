@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SHIKAKU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="NacitajXML()">
+
+<div>
+<link rel="icon" type="image/png" href="foto/favicon.png">
+<img src="foto/backbtn.png" id="backbtn" onclick="krokspat()">
+<img src="foto/savebtn.png" id="savebtn" onclick="UlozHru()">
+<img src="foto/refreshh.png" id="refreshbtn" onclick="Reset()">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Ponuka</span>
+</div>
+<div id="uudaje">
+<p id="datum"></p>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeNavod()">&times;</span>
+  <div class="modal-content">
+
+
+
+    <div class="caption-container">
+      <h1> Návod </h1>
+	  <h2> Princíp Hry </h2>
+	  <p id="navod">Hra je inšpirovaná mobilnou aplikáciou pre Android s názvom „Shikaku“.
+
+Na mriežke plochy sa zobrazia číslice, ktoré označujú koľko buniek má
+užívateľ vyznačiť ťahaním myši do bloku. Bloky sa navzájom nebudú pokrývať a zjednotenie všetkých
+blokov bude nakoniec pokrývať celú plochu. Hra sa skončí v momente, keď už nebude možné na hraciu
+plochu umiestniť žiaden ďalší blok.</p>
+<img src="foto/navodjedna.png" id="navod1">
+<img src="foto/sipka.png" id="sipka">
+<img src="foto/navoddva.png" id="navod2">
+<h2> Získavanie bodov</h2>
+<p id="navod">Získavanie bodov je na princípe najrýchlejšieho času, čím rýchlejší tým lepší.</p>
+
+   
+  </div>
+ </div>
+</div> 
+
+
+  
+  
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#" onclick="openNavod()">Návod</a>
+  <a href="svg.html">JS Knižnica</a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="skript.js"></script>
+</body>
+</html>
